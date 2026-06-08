@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
-// Interface
 class LibraryUser {
 public:
     virtual void registerAccount() = 0;
     virtual void requestBook() = 0;
 };
-// KidUsers Class
 class KidUsers : public LibraryUser {
 public:
     int age;
@@ -25,7 +23,6 @@ public:
             cout << "Oops, you are allowed to take only kids books" << endl;
     }
 };
-// AdultUser Class
 class AdultUser : public LibraryUser {
 public:
     int age;
